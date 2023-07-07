@@ -1,6 +1,7 @@
 # AI - Implementing Logistic Regression for Diabetes Labeling
 
 Authors: [Mehdi Mardani](@mahdi712), Ali Maher
+
 Date: 1402/04/11
 
 ## Introduction
