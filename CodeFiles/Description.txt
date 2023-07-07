@@ -1,0 +1,35 @@
+Authors: Mehdi Mardani, Ali Maher
+Date: 1402/04/11
+Topic: AI _ implementing logistic regression for labeling diabets. 
+
+Steps:
+
+- Cleaning data:
+    Replacing invalid records with means of each features (Zero values)
+    features: Glucose, BloodPressure, SkinThickness, and BMI 
+
+- Training: 
+    Initialize weights as zero ===>  (w1, w2, ... , wn)
+    Initialize bias as zero ===> (b) or (theta_0)
+
+- Given a data point:
+    Predict result by using y = 1 / (1 + e^(-wx + b)) ===> (sigmoid function)
+    Calculate error ===> (error = y - y_hat)   
+    Use gradient descent to update weights and bias ===> (w1 = w1 + x1 * error * learning_rate) and (b = b + error * learning_rate)
+    Repeat n times (n_iters)
+
+- Testing:
+    Given a data point:
+    Put the values into the sigmoid function ===> (y_hat)
+    Choose the label based on the value of y_hat ===> (y_hat > 0.5, y_hat = 1) or (y_hat < 0.5, y_hat = 0)
+
+- Main:
+    Here we have a tiny interface with three options:
+    1. Accuracy of our logistic regression
+    2. Predict if one person has diabets or not
+    3. Exit (note that if you exit the progarm you have to wait for the AI to be trained again for next use)
+
+Data:
+# Total data: 2728
+# Train data: 2728 * 0.70 ~= 1909
+# Test data: 819
